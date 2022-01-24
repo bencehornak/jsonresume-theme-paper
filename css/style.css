@@ -224,7 +224,7 @@ body > div > article > div > section:last-child {
   color:#4fc3f7;
 }
 
-.work-listing p {
+.work-listing p, .summary p {
   font-family: "Open Sans";
   font-size:0.7em;
   

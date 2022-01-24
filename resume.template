@@ -78,6 +78,11 @@
                           <li>Postal Code & City</li>
                           <li>{{postalCode}} {{city}}</li>
                         </ul>
+                      {{else}}
+                        <ul>
+                          <li>City</li>
+                          <li>{{ city }}</li>
+                        </ul>
                       {{/if}}
                     {{/if}}
                     {{#if region}}
@@ -91,8 +96,23 @@
               </section>
             {{/ifCond}}
           {{/location}}
+
+          {{#if summary}}
+          <section class="content summary">
+            <div class="row">
+              <div class="content-cat">
+                Summary
+              </div>
+              <div class="content-text">
+                <p>{{summary}}</p>
+              </div>
+            </div>
+          </section>
+          {{/if}}
       {{/resume.basics}}
 
+
+        
           {{#if resume.skills.length}}
           <section class="content">
             <div class="row">
